@@ -23,6 +23,6 @@ RUN strip /usr/local/bin/equibit*
 RUN rm -rf /equibit-core
 RUN mkdir /data
 COPY equibit.conf /data
-COPY .bash_aliases /root
+COPY ec /usr/local/bin
 WORKDIR /root
 CMD ["equibitd", "-datadir=/data", "-printtoconsole"]
