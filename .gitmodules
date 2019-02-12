@@ -1,4 +1,4 @@
 [submodule "equibit-core"]
 	path = equibit-core
-	url = ../equibit-core.git
-	branch = testnet
+	url = https://github.com/Equibit/equibit-core
+	branch = dev
