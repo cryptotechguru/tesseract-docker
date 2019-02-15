@@ -1,1 +1,1 @@
-docker image build -t macterra/eqb-testnet:v02.08 .
+docker image build -t macterra/eqb-testnet:v02.15 .
