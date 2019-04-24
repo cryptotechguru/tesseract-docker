@@ -12,17 +12,17 @@ RUN \
         apt-get install -y libdb4.8-dev libdb4.8++-dev && \
         apt-get install -y libminiupnpc-dev && \
         apt-get install -y libzmq3-dev 
-RUN mkdir /equibit-core
-COPY equibit-core /equibit-core
-WORKDIR /equibit-core
+RUN mkdir /tesseract-core
+COPY tesseract-core /tesseract-core
+WORKDIR /tesseract-core
 RUN ./autogen.sh
 RUN ./configure --disable-tests --disable-bench --with-gui=no
 RUN make
 RUN make install
-RUN strip /usr/local/bin/equibit*
-RUN rm -rf /equibit-core
+RUN strip /usr/local/bin/tesseract*
+RUN rm -rf /tesseract-core
 RUN mkdir /data
-COPY equibit.conf /data
-COPY ec /usr/local/bin
+COPY tesseract.conf /data
+COPY tc /usr/local/bin
 WORKDIR /root
-CMD ["equibitd", "-datadir=/data", "-printtoconsole"]
+CMD ["tesseractd", "-datadir=/data", "-printtoconsole"]

@@ -1,1 +1,1 @@
-docker image build -t macterra/eqb-testnet:v02.15 .
+docker image build -t macterra/tesseract-node .

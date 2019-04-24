@@ -1,4 +1,3 @@
-[submodule "equibit-core"]
-	path = equibit-core
-	url = https://github.com/Equibit/equibit-core
-	branch = dev
+[submodule "tesseract-core"]
+	path = tesseract-core
+	url = https://github.com/cryptotechguru/tesseract-core
