@@ -25,4 +25,6 @@ RUN mkdir /data
 COPY tesseract.conf /data
 COPY tc /usr/local/bin
 WORKDIR /root
-CMD ["tesseractd", "-datadir=/data", "-printtoconsole"]
+COPY trigger.sh trigger.sh
+COPY start.sh start.sh
+CMD ["sh", "start.sh"]
