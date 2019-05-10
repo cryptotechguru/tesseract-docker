@@ -1,2 +1,2 @@
 sh trigger.sh &
-tesseractd -datadir=/data -statshostname=grafana -printtoconsole
+tesseractd -datadir=/data -printtoconsole

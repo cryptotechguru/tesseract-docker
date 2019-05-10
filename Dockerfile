@@ -5,7 +5,7 @@ RUN \
         add-apt-repository ppa:bitcoin/bitcoin && \
         apt-get update && \
         apt-get install -y apt-utils && \
-        apt-get install -y vim less python3 netcat && \
+        apt-get install -y vim less python3 netcat inetutils-ping && \
         apt-get install -y build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils && \
         apt-get install -y libboost-system-dev libboost-filesystem-dev libboost-chrono-dev && \
 	apt-get install -y libboost-program-options-dev libboost-test-dev libboost-thread-dev && \
