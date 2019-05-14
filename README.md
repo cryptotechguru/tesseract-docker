@@ -1,2 +1,2 @@
-# equibit-core-docker
-Dockerfile for equibit-core
+# tesseract-docker
+Dockerfile for tesseract-core
